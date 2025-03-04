@@ -1,5 +1,8 @@
 import Header from '../componentes/Header';
-
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Sobremi() {
   return (
@@ -12,25 +15,36 @@ export default function Sobremi() {
         </div>
         <div>
           <h1>Agustín Botana</h1>
-          <h2 style={{ color: "greenyellow" }}>Desarrollador especializado en Python y Frontend con HTML, CSS, JS y React.</h2>
+          <h2 style={{ color: "greenyellow" }}>Desarrollador especializado en Python y Frontend
+            <br />con HTML, CSS, JS y React.</h2>
           <p>
-            Soy un apasionado por la complejidad de cada algoritmo.
-            <br />Siempre busco mejorar, explorando nuevos conocimientos.
+            Soy un apasionado por la complejidad de cada algoritmo,
+            <br />siempre busco mejorar, explorando nuevos conocimientos.
             <br />Valoro la dedicación y el trabajo en equipo.
           </p>
           <div className="iconos">
-            <a href="https://www.linkedin.com/in/agust%C3%ADn-botana/" target="_blank" className="icono" rel="noopener noreferrer">
-              <i className="fab fa-linkedin-in"></i>
+            <a
+              href="https://www.linkedin.com/in/agust%C3%ADn-botana/"
+              target="_blank"
+              className="icono"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
-            <a href="https://github.com/Botitaa" target="_blank" className="icono" rel="noopener noreferrer">
-              <i className="fab fa-github"></i>
+            <a
+              href="https://github.com/Botitaa"
+              target="_blank"
+              className="icono"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} />
             </a>
             <a href="mailto:agusbotana@hotmail.com" className="icono">
-              <i className="fas fa-envelope"></i>
+              <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </div>
         </div>
       </section>
     </>
-  )
+  );
 }
