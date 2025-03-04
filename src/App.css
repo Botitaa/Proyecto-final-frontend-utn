@@ -6,10 +6,493 @@
   font-style: normal;
   font-kerning: none;
   text-decoration: none;
-  color: white;
 }
 
 /*imagen de fondo*/
 body {
   background-color: #09090b;
+}
+
+/*menu header*/
+.cont-menu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.cont-menu li a {
+  font-weight: 450;
+  font-style: normal;
+  color: rgb(148, 148, 148);
+  font-kerning: none;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.cont-menu li a:hover {
+  color: white;
+}
+
+.cont-menu li {
+  transition: transform 0.3s;
+}
+
+.cont-menu li:hover {
+  transform: scale(1.1);
+}
+
+/*contenedor sobre mi*/
+
+.sobre-mi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.sobre-mi>div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-mi>div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.sobre-mi img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.sobre-mi img:hover {
+  transform: scale(1.1);
+}
+
+.sobre-mi button {
+  background: linear-gradient(to bottom right, #42323271, #00000071);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+.sobre-mi button:hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.sobre-mi h1 {
+  font-size: 40px;
+}
+
+.sobre-mi h2 {
+  opacity: 0.9;
+  font-size: 20px;
+  color: greenyellow;
+}
+
+.sobre-mi p {
+  font-size: 20px;
+  opacity: 0.8;
+  text-align: left;
+}
+
+.iconos {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #222;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.icono:hover {
+  background-color: #ef4765;
+}
+
+/* contenedor de proyecto*/
+
+
+/* Estilos para los items de lenguajes */
+
+
+.box-languages {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.language {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  background-color: #222121;
+  margin-top: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.language i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+/* Color y fondo según el lenguaje */
+
+.language.html {
+  background-color: #E44D26;
+  color: rgb(0, 0, 0);
+}
+
+.language.css {
+  background-color: #1572B6;
+  color: rgb(0, 0, 0);
+}
+
+.language.js {
+  background-color: #F7DF1E;
+  color: black;
+}
+
+.language.mysql {
+  background-color: #00758F;
+  color: rgb(0, 0, 0);
+}
+
+.language:hover {
+  opacity: 0.8;
+}
+
+/* contenedor formacion */
+
+.titulo-formacion {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  padding-bottom: 50px;
+  opacity: 0.9;
+}
+
+.cont-formacion {
+  margin-top: 150px;
+}
+
+.formacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.box-formacion {
+  text-align: center;
+  flex: 1 1 calc(33.33% - 40px);
+  max-width: 450px;
+  min-width: 300px;
+  height: 250px;
+  padding: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.box-formacion:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+/*colores iconos de cada lenguaje*/
+
+.icon-html {
+  color: #E44D26;
+}
+
+.icon-css {
+  color: #264DE4;
+}
+
+.icon-js {
+  color: #F7DF1E;
+}
+
+.icon-react {
+  color: #61DAFB;
+}
+
+.icon-php {
+  color: #777BB4;
+}
+
+.icon-java {
+  color: #007396;
+}
+
+.icon-python {
+  color: #3776AB;
+}
+
+.icon-ai,
+.icon-ml,
+.icon-ds {
+  color: #FFD43B;
+}
+
+/* contenedor contacto*/
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.contacto label {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  text-align: left;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.contacto button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(to bottom right, #42323271, #00000071);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contacto button:hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+/* contenedor footter*/
+
+footer {
+  align-items: center;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+
+@media (max-width: 768px) {
+
+  /* Menu header */
+  .cont-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cont-menu li a {
+    font-size: 18px;
+  }
+
+  /* Contenedor sobre mí */
+  .sobre-mi {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0 20px;
+  }
+
+  .sobre-mi img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sobre-mi h1 {
+    font-size: 32px;
+  }
+
+  .sobre-mi h2 {
+    font-size: 18px;
+  }
+
+  .sobre-mi p {
+    font-size: 16px;
+  }
+
+  .sobre-mi button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Iconos */
+  .iconos {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .icono {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  /* Contenedor de proyecto */
+  .titulo-proyecto {
+    font-size: 36px;
+    padding-bottom: 50px;
+  }
+
+  .proyectos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-right: 0;
+  }
+
+  .box-proyectos {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .box-proyectos h1 {
+    font-size: 40px;
+  }
+
+  .box-proyectos p {
+    font-size: 16px;
+  }
+
+  /* Contenedor de lenguajes */
+  .box-languages {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .language {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  /* Contenedor formación */
+  .titulo-formacion {
+    font-size: 36px;
+  }
+
+  .formacion {
+    gap: 20px;
+  }
+
+  .box-formacion {
+    min-width: 250px;
+    padding: 20px;
+    height: auto;
+    padding: 20px;
+  }
+
+  /* Contenedor contacto */
+  .titulo-contacto {
+    font-size: 36px;
+    padding-bottom: 30px;
+  }
+
+  .contacto {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .contacto label {
+    font-size: 14px;
+  }
+
+  .contacto input,
+  .contacto textarea {
+    font-size: 14px;
+  }
+
+  .contacto button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
 }

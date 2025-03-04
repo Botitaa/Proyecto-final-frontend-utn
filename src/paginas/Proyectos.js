@@ -1,5 +1,5 @@
 import Header from '../componentes/Header';
-import "../App.css";
+
 
 export default function Proyectos() {
   return (
