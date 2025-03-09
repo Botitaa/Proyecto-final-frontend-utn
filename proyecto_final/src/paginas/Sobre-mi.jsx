@@ -13,7 +13,7 @@ export default function Sobremi() {
           <img src="https://avatars.githubusercontent.com/u/47467914?v=4" alt="foto carnet" />
           <button>Disponible para trabajar</button>
         </div>
-        <div>
+        <div className='cont-sobremi'>
           <h1>Agustín Botana</h1>
           <h2 style={{ color: "greenyellow" }}>Desarrollador especializado en Python y Frontend
             <br />con HTML, CSS, JS y React.</h2>
